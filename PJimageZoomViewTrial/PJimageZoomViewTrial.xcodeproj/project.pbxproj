@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1765961940A33600EDAC50 /* PJTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1765911940A33600EDAC50 /* PJTapDetectingImageView.m */; };
+		CE1765971940A33600EDAC50 /* PJTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1765931940A33600EDAC50 /* PJTapDetectingView.m */; };
+		CE1765981940A33600EDAC50 /* PJZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1765951940A33600EDAC50 /* PJZoomingScrollView.m */; };
 		CE862E2C194099F2002D2ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE862E2B194099F2002D2ED9 /* Foundation.framework */; };
 		CE862E2E194099F2002D2ED9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE862E2D194099F2002D2ED9 /* CoreGraphics.framework */; };
 		CE862E30194099F2002D2ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE862E2F194099F2002D2ED9 /* UIKit.framework */; };
@@ -19,9 +22,6 @@
 		CE862E47194099F2002D2ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE862E2F194099F2002D2ED9 /* UIKit.framework */; };
 		CE862E4F194099F2002D2ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE862E4D194099F2002D2ED9 /* InfoPlist.strings */; };
 		CE862E51194099F2002D2ED9 /* PJimageZoomViewTrialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE862E50194099F2002D2ED9 /* PJimageZoomViewTrialTests.m */; };
-		CE862ECC19409A18002D2ED9 /* PJTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE862EA619409A18002D2ED9 /* PJTapDetectingImageView.m */; };
-		CE862ECD19409A18002D2ED9 /* PJTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE862EA819409A18002D2ED9 /* PJTapDetectingView.m */; };
-		CE862ECE19409A18002D2ED9 /* PJZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE862EAA19409A18002D2ED9 /* PJZoomingScrollView.m */; };
 		CE862ED219409A3D002D2ED9 /* PJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE862ED019409A3D002D2ED9 /* PJViewController.m */; };
 		CE862ED319409A3D002D2ED9 /* PJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE862ED119409A3D002D2ED9 /* PJViewController.xib */; };
 /* End PBXBuildFile section */
@@ -37,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE17658F1940A33600EDAC50 /* PJCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJCommon.h; sourceTree = "<group>"; };
+		CE1765901940A33600EDAC50 /* PJTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJTapDetectingImageView.h; sourceTree = "<group>"; };
+		CE1765911940A33600EDAC50 /* PJTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJTapDetectingImageView.m; sourceTree = "<group>"; };
+		CE1765921940A33600EDAC50 /* PJTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJTapDetectingView.h; sourceTree = "<group>"; };
+		CE1765931940A33600EDAC50 /* PJTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJTapDetectingView.m; sourceTree = "<group>"; };
+		CE1765941940A33600EDAC50 /* PJZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJZoomingScrollView.h; sourceTree = "<group>"; };
+		CE1765951940A33600EDAC50 /* PJZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJZoomingScrollView.m; sourceTree = "<group>"; };
 		CE862E28194099F2002D2ED9 /* PJimageZoomViewTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJimageZoomViewTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE862E2B194099F2002D2ED9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE862E2D194099F2002D2ED9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,13 +60,6 @@
 		CE862E4C194099F2002D2ED9 /* PJimageZoomViewTrialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PJimageZoomViewTrialTests-Info.plist"; sourceTree = "<group>"; };
 		CE862E4E194099F2002D2ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE862E50194099F2002D2ED9 /* PJimageZoomViewTrialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PJimageZoomViewTrialTests.m; sourceTree = "<group>"; };
-		CE862EA419409A18002D2ED9 /* PJCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJCommon.h; sourceTree = "<group>"; };
-		CE862EA519409A18002D2ED9 /* PJTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJTapDetectingImageView.h; sourceTree = "<group>"; };
-		CE862EA619409A18002D2ED9 /* PJTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJTapDetectingImageView.m; sourceTree = "<group>"; };
-		CE862EA719409A18002D2ED9 /* PJTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJTapDetectingView.h; sourceTree = "<group>"; };
-		CE862EA819409A18002D2ED9 /* PJTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJTapDetectingView.m; sourceTree = "<group>"; };
-		CE862EA919409A18002D2ED9 /* PJZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJZoomingScrollView.h; sourceTree = "<group>"; };
-		CE862EAA19409A18002D2ED9 /* PJZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJZoomingScrollView.m; sourceTree = "<group>"; };
 		CE862ECF19409A3D002D2ED9 /* PJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJViewController.h; sourceTree = "<group>"; };
 		CE862ED019409A3D002D2ED9 /* PJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJViewController.m; sourceTree = "<group>"; };
 		CE862ED119409A3D002D2ED9 /* PJViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PJViewController.xib; sourceTree = "<group>"; };
@@ -89,6 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE17658D1940A33600EDAC50 /* PJImageZoomView */ = {
+			isa = PBXGroup;
+			children = (
+				CE17658E1940A33600EDAC50 /* Libraries */,
+				CE17658F1940A33600EDAC50 /* PJCommon.h */,
+				CE1765901940A33600EDAC50 /* PJTapDetectingImageView.h */,
+				CE1765911940A33600EDAC50 /* PJTapDetectingImageView.m */,
+				CE1765921940A33600EDAC50 /* PJTapDetectingView.h */,
+				CE1765931940A33600EDAC50 /* PJTapDetectingView.m */,
+				CE1765941940A33600EDAC50 /* PJZoomingScrollView.h */,
+				CE1765951940A33600EDAC50 /* PJZoomingScrollView.m */,
+			);
+			path = PJImageZoomView;
+			sourceTree = "<group>";
+		};
+		CE17658E1940A33600EDAC50 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		CE862E1F194099F2002D2ED9 = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +144,10 @@
 		CE862E31194099F2002D2ED9 /* PJimageZoomViewTrial */ = {
 			isa = PBXGroup;
 			children = (
+				CE17658D1940A33600EDAC50 /* PJImageZoomView */,
 				CE862ECF19409A3D002D2ED9 /* PJViewController.h */,
 				CE862ED019409A3D002D2ED9 /* PJViewController.m */,
 				CE862ED119409A3D002D2ED9 /* PJViewController.xib */,
-				CE862E5A19409A18002D2ED9 /* PJPhotoBrowser */,
 				CE862E3A194099F2002D2ED9 /* PJAppDelegate.h */,
 				CE862E3B194099F2002D2ED9 /* PJAppDelegate.m */,
 				CE862E3D194099F2002D2ED9 /* Images.xcassets */,
@@ -161,20 +183,6 @@
 				CE862E4D194099F2002D2ED9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE862E5A19409A18002D2ED9 /* PJPhotoBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				CE862EA419409A18002D2ED9 /* PJCommon.h */,
-				CE862EA519409A18002D2ED9 /* PJTapDetectingImageView.h */,
-				CE862EA619409A18002D2ED9 /* PJTapDetectingImageView.m */,
-				CE862EA719409A18002D2ED9 /* PJTapDetectingView.h */,
-				CE862EA819409A18002D2ED9 /* PJTapDetectingView.m */,
-				CE862EA919409A18002D2ED9 /* PJZoomingScrollView.h */,
-				CE862EAA19409A18002D2ED9 /* PJZoomingScrollView.m */,
-			);
-			path = PJPhotoBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1765971940A33600EDAC50 /* PJTapDetectingView.m in Sources */,
+				CE1765961940A33600EDAC50 /* PJTapDetectingImageView.m in Sources */,
 				CE862E3C194099F2002D2ED9 /* PJAppDelegate.m in Sources */,
-				CE862ECC19409A18002D2ED9 /* PJTapDetectingImageView.m in Sources */,
-				CE862ECD19409A18002D2ED9 /* PJTapDetectingView.m in Sources */,
 				CE862E38194099F2002D2ED9 /* main.m in Sources */,
 				CE862ED219409A3D002D2ED9 /* PJViewController.m in Sources */,
-				CE862ECE19409A18002D2ED9 /* PJZoomingScrollView.m in Sources */,
+				CE1765981940A33600EDAC50 /* PJZoomingScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
