@@ -29,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    mwSC = [[PJZoomingScrollView alloc]initWithImageURL:@"http://images6.fanpop.com/image/photos/33400000/Love-love-33499792-1440-900.jpg"];
+    mwSC = [[PJZoomingScrollView alloc]initWithImageURL:@"http://img2.wikia.nocookie.net/__cb20120530160047/battlefield/images/7/7e/IngameMap_Myanmar_P4F.png"];
     mwSC.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:mwSC];
 }

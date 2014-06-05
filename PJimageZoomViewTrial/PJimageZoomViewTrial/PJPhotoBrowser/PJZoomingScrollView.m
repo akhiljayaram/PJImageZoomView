@@ -8,7 +8,6 @@
 
 #import "PJCommon.h"
 #import "PJZoomingScrollView.h"
-#import "DACircularProgressView.h"
 
 // Private methods and properties
 @interface PJZoomingScrollView () {
