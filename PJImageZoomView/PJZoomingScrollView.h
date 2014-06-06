@@ -23,7 +23,8 @@
 - (void)displayImageFailure;
 - (void)setMaxMinZoomScalesForCurrentBounds;
 - (void)prepareForReuse;
-- (id)initWithImageURL:(NSString *)imageURL;
-- (id)initWithImage:(UIImage *)image;
-
+//- (id)initWithImageURL:(NSString *)imageURL;
+//- (id)initWithImage:(UIImage *)image;
+- (void)displayImageWithImageUrl:(NSString *)imageURL;
+- (void)displayImageWithImage:(UIImage *)image;
 @end

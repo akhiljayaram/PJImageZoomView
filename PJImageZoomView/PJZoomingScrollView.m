@@ -22,14 +22,38 @@
 
 @implementation PJZoomingScrollView
 
+- (id)init {
+	if ((self = [super init])) {
+        [self doInitialSetup];
+
+	}
+	return self;
+}
+
+- (id)initWithFrame:(CGRect)frame {
+	if ((self = [super initWithFrame:frame])) {
+        [self doInitialSetup];
+
+	}
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	if ((self = [super initWithCoder:aDecoder])) {
+        [self doInitialSetup];
+        
+	}
+	return self;
+}
 - (id)initWithImageURL:(NSString *)imageURL {
     if ((self = [super init])) {
         
         // Setup
         a = [[UIActivityIndicatorView alloc]init];
         a.center = self.center;
+        [self addSubview:a];
 //		_image = image;
-        [self doInitialSetup];
         [self downloadImageWithURL:[NSURL URLWithString:imageURL] completionBlock:^(BOOL succeeded, UIImage *image) {
             _image = image;
             [self displayImage];
@@ -44,13 +68,26 @@
         // Setup
  
         _image = image;
-        [self doInitialSetup];
         [self displayImage];
     }
     return self;
 }
+- (void)displayImageWithImageUrl:(NSString *)imageURL 
+{
+    a = [[UIActivityIndicatorView alloc]init];
+    a.center = self.center;
+    [self addSubview:a];
 
-
+    [self downloadImageWithURL:[NSURL URLWithString:imageURL] completionBlock:^(BOOL succeeded, UIImage *image) {
+        _image = image;
+        [self displayImage];
+    }];
+}
+- (void)displayImageWithImage:(UIImage *)image
+{
+        _image = image;
+        [self displayImage];
+}
 - (void)doInitialSetup
 {
     _tapView = [[PJTapDetectingView alloc] initWithFrame:self.bounds];
