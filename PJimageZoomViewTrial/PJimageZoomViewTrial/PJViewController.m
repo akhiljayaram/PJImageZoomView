@@ -7,15 +7,12 @@
 //
 
 #import "PJViewController.h"
-#import "PJZoomingScrollView.h"
 @interface PJViewController ()
 
 @end
 
 @implementation PJViewController
-{
-    PJZoomingScrollView *mwSC;
-}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,9 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    mwSC = [[PJZoomingScrollView alloc]initWithImageURL:@"http://img2.wikia.nocookie.net/__cb20120530160047/battlefield/images/7/7e/IngameMap_Myanmar_P4F.png"];
-    mwSC.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    [self.view addSubview:mwSC];
+    [_mwSC displayImageWithImageUrl:@"http://www.searscentre.com/assets/events/2013/3/mainEventImg/01-21-13_Big10_Carousel2.jpg"];
 }
 
 - (void)didReceiveMemoryWarning

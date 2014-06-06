@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PJZoomingScrollView.h"
 
 @interface PJViewController : UIViewController
+@property (nonatomic, weak) IBOutlet  PJZoomingScrollView *mwSC;
 
 @end
